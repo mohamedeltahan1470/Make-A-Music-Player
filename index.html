@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Music Player Design - Easy Tutorials</title>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fas fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+            <img src="media/hqdefault (1).jpg" class="song-img">
+            <h1>سورة غافر</h1>
+            <p> بصوت القارى ياسر الدوسري</p>
+
+            <audio controls id="song">
+                <source src="./media/040.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><i class="fas fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fas fa-pause" id="ctrlIcon"></i></div>
+                <div><i class="fas fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
